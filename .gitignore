@@ -1,0 +1,11 @@
+log
+*.log
+.DS_Store
+
+.idea
+build/
+tmp/
+node_modules/
+/js/.parcel-cache
+/js/src/gen/*
+/js/dist
