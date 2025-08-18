@@ -1,4 +1,4 @@
-module github.com/mynaparrot/plugnmeet-protocol
+module github.com/mynaparrot/WeMeet-protocol
 
 go 1.24
 
