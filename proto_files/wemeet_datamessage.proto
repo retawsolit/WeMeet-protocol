@@ -1,0 +1,43 @@
+syntax = "proto3";
+package wemeet;
+
+option go_package = "github.com/retawsolit/WeMeet-protocol/wemeet";
+
+message DataChannelMessage {
+  string id = 1;
+  DataMsgBodyType type = 2;
+  string from_user_id = 3;
+  optional string to_user_id = 4;
+  string message = 5;
+}
+
+enum DataMsgBodyType {
+  // SYSTEM type
+  UNKNOWN = 0;
+
+  FILE_UPLOAD = 1;
+  INFO = 2;
+  ALERT = 3;
+
+  USER_VISIBILITY_CHANGE = 4;
+  EXTERNAL_MEDIA_PLAYER_EVENTS = 5;
+
+  NEW_POLL_RESPONSE = 6;
+  SPEECH_SUBTITLE_TEXT = 7;
+
+  // WHITEBOARD type
+  REQ_FULL_WHITEBOARD_DATA = 8;
+  RES_FULL_WHITEBOARD_DATA = 9;
+
+  SCENE_UPDATE = 10;
+  POINTER_UPDATE = 11;
+  WHITEBOARD_APP_STATE_CHANGE = 12;
+
+  ADD_WHITEBOARD_FILE = 13;
+  ADD_WHITEBOARD_OFFICE_FILE = 14;
+  PAGE_CHANGE = 15;
+
+  USER_CONNECTION_QUALITY_CHANGE = 16;
+
+  // next ID: 17
+}

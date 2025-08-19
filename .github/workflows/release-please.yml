@@ -1,0 +1,54 @@
+name: Build server for release
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  release-server:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: googleapis/release-please-action@v4
+        id: release
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          config-file: release-please-config.json
+          manifest-file: .release-please-manifest.json
+      - name: Checkout
+        uses: actions/checkout@v5
+      - name:
+        uses: bufbuild/buf-setup-action@v1
+        with:
+          version: latest
+      - name: setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.x'
+      - uses: pnpm/action-setup@v4
+        name: Install pnpm
+        with:
+          version: latest
+      - name: Build and publish
+        run: |
+          bash generate.sh
+          cd js
+          
+          if [ ! ${{ steps.release.outputs.release_created }} ]; then
+            pnpm version prerelease --no-commit-hooks --no-git-tag-version
+            # push changes
+            git config user.name github-actions
+            git config user.email github-actions@github.com
+            git add .
+            git commit -m "bump beta version"
+            git push
+          fi
+          
+          bash generate.sh
+          npm config set '//registry.npmjs.org/:_authToken' $NPM_TOKEN
+          npm publish
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
