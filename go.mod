@@ -1,4 +1,4 @@
-module github.com/retawsolit/WeMeet-protocol
+module github.com/retawsolit/wemeet-protocol
 
 go 1.24
 
