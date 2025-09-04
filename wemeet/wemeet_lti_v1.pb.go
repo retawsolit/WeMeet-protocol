@@ -7,11 +7,12 @@
 package wemeet
 
 import (
-	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
-	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
 	sync "sync"
 	unsafe "unsafe"
+
+	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
+	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 )
 
 const (
@@ -336,7 +337,7 @@ const file_wemeet_lti_v1_proto_rawDesc = "" +
 	"\x11_background_colorB\x0e\n" +
 	"\f_custom_logoB\x84\x01\n" +
 	"\n" +
-	"com.wemeetB\x10WemeetLtiV1ProtoP\x01Z,github.com/retawsolit/WeMeet-protocol/wemeet\xa2\x02\x03WXX\xaa\x02\x06Wemeet\xca\x02\x06Wemeet\xe2\x02\x12Wemeet\\GPBMetadata\xea\x02\x06Wemeetb\x06proto3"
+	"com.wemeetB\x10WemeetLtiV1ProtoP\x01Z,github.com/retawsolit/wemeet-protocol/wemeet\xa2\x02\x03WXX\xaa\x02\x06Wemeet\xca\x02\x06Wemeet\xe2\x02\x12Wemeet\\GPBMetadata\xea\x02\x06Wemeetb\x06proto3"
 
 var (
 	file_wemeet_lti_v1_proto_rawDescOnce sync.Once

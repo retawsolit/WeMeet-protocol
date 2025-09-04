@@ -4,7 +4,7 @@ import (
 	"net/url"
 	"strconv"
 
-	"github.com/retawsolit/WeMeet-protocol/wemeet"
+	"github.com/retawsolit/wemeet-protocol/wemeet"
 )
 
 func AssignLTIV1CustomParams(params *url.Values, claims *wemeet.LtiClaims) {

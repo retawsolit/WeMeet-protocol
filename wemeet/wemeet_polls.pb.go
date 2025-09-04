@@ -7,11 +7,12 @@
 package wemeet
 
 import (
-	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
-	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
 	sync "sync"
 	unsafe "unsafe"
+
+	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
+	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 )
 
 const (
@@ -811,7 +812,7 @@ const file_wemeet_polls_proto_rawDesc = "" +
 	"\x0e_total_runningB\x18\n" +
 	"\x16_poll_responses_resultB\x84\x01\n" +
 	"\n" +
-	"com.wemeetB\x10WemeetPollsProtoP\x01Z,github.com/retawsolit/WeMeet-protocol/wemeet\xa2\x02\x03WXX\xaa\x02\x06Wemeet\xca\x02\x06Wemeet\xe2\x02\x12Wemeet\\GPBMetadata\xea\x02\x06Wemeetb\x06proto3"
+	"com.wemeetB\x10WemeetPollsProtoP\x01Z,github.com/retawsolit/wemeet-protocol/wemeet\xa2\x02\x03WXX\xaa\x02\x06Wemeet\xca\x02\x06Wemeet\xe2\x02\x12Wemeet\\GPBMetadata\xea\x02\x06Wemeetb\x06proto3"
 
 var (
 	file_wemeet_polls_proto_rawDescOnce sync.Once

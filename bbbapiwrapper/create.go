@@ -6,8 +6,8 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/retawsolit/WeMeet-protocol/utils"
-	"github.com/retawsolit/WeMeet-protocol/wemeet"
+	"github.com/retawsolit/wemeet-protocol/utils"
+	"github.com/retawsolit/wemeet-protocol/wemeet"
 )
 
 type CreateMeetingReq struct {

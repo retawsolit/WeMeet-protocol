@@ -7,11 +7,12 @@
 package wemeet
 
 import (
-	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
-	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
 	sync "sync"
 	unsafe "unsafe"
+
+	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
+	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 )
 
 const (
@@ -1118,7 +1119,7 @@ const file_wemeet_nats_msg_proto_rawDesc = "" +
 	" NATS_SYSTEM_NOTIFICATION_WARNING\x10\x01\x12\"\n" +
 	"\x1eNATS_SYSTEM_NOTIFICATION_ERROR\x10\x02B\x86\x01\n" +
 	"\n" +
-	"com.wemeetB\x12WemeetNatsMsgProtoP\x01Z,github.com/retawsolit/WeMeet-protocol/wemeet\xa2\x02\x03WXX\xaa\x02\x06Wemeet\xca\x02\x06Wemeet\xe2\x02\x12Wemeet\\GPBMetadata\xea\x02\x06Wemeetb\x06proto3"
+	"com.wemeetB\x12WemeetNatsMsgProtoP\x01Z,github.com/retawsolit/wemeet-protocol/wemeet\xa2\x02\x03WXX\xaa\x02\x06Wemeet\xca\x02\x06Wemeet\xe2\x02\x12Wemeet\\GPBMetadata\xea\x02\x06Wemeetb\x06proto3"
 
 var (
 	file_wemeet_nats_msg_proto_rawDescOnce sync.Once

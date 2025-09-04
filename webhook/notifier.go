@@ -11,7 +11,7 @@ import (
 	"github.com/google/uuid"
 	"github.com/hashicorp/go-retryablehttp"
 	"github.com/livekit/protocol/auth"
-	"github.com/retawsolit/WeMeet-protocol/wemeet"
+	"github.com/retawsolit/wemeet-protocol/wemeet"
 	"github.com/sirupsen/logrus"
 	"google.golang.org/protobuf/encoding/protojson"
 )

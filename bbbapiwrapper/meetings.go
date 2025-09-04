@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/livekit/protocol/livekit"
-	"github.com/retawsolit/WeMeet-protocol/wemeet"
+	"github.com/retawsolit/wemeet-protocol/wemeet"
 	"google.golang.org/protobuf/encoding/protojson"
 )
 

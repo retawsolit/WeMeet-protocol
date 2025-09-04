@@ -7,11 +7,12 @@
 package wemeet
 
 import (
-	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
-	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
 	sync "sync"
 	unsafe "unsafe"
+
+	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
+	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 )
 
 const (
@@ -927,7 +928,7 @@ const file_wemeet_analytics_proto_rawDesc = "" +
 	"\x16ANALYTICS_STATUS_MUTED\x10\x02\x12\x1c\n" +
 	"\x18ANALYTICS_STATUS_UNMUTED\x10\x03B\x88\x01\n" +
 	"\n" +
-	"com.wemeetB\x14WemeetAnalyticsProtoP\x01Z,github.com/retawsolit/WeMeet-protocol/wemeet\xa2\x02\x03WXX\xaa\x02\x06Wemeet\xca\x02\x06Wemeet\xe2\x02\x12Wemeet\\GPBMetadata\xea\x02\x06Wemeetb\x06proto3"
+	"com.wemeetB\x14WemeetAnalyticsProtoP\x01Z,github.com/retawsolit/wemeet-protocol/wemeet\xa2\x02\x03WXX\xaa\x02\x06Wemeet\xca\x02\x06Wemeet\xe2\x02\x12Wemeet\\GPBMetadata\xea\x02\x06Wemeetb\x06proto3"
 
 var (
 	file_wemeet_analytics_proto_rawDescOnce sync.Once

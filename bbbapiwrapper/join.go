@@ -3,7 +3,7 @@ package bbbapiwrapper
 import (
 	"encoding/xml"
 
-	"github.com/retawsolit/WeMeet-protocol/wemeet"
+	"github.com/retawsolit/wemeet-protocol/wemeet"
 )
 
 type JoinMeetingReq struct {

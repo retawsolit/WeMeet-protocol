@@ -7,13 +7,14 @@
 package wemeet
 
 import (
+	reflect "reflect"
+	sync "sync"
+	unsafe "unsafe"
+
 	_ "buf.build/gen/go/bufbuild/protovalidate/protocolbuffers/go/buf/validate"
 	livekit "github.com/livekit/protocol/livekit"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
-	reflect "reflect"
-	sync "sync"
-	unsafe "unsafe"
 )
 
 const (
@@ -1029,7 +1030,7 @@ const file_wemeet_auth_room_proto_rawDesc = "" +
 	"\x03msg\x18\x02 \x01(\tR\x03msg\x124\n" +
 	"\x06result\x18\x03 \x01(\v2\x1c.wemeet.FetchPastRoomsResultR\x06resultB\x87\x01\n" +
 	"\n" +
-	"com.wemeetB\x13WemeetAuthRoomProtoP\x01Z,github.com/retawsolit/WeMeet-protocol/wemeet\xa2\x02\x03WXX\xaa\x02\x06Wemeet\xca\x02\x06Wemeet\xe2\x02\x12Wemeet\\GPBMetadata\xea\x02\x06Wemeetb\x06proto3"
+	"com.wemeetB\x13WemeetAuthRoomProtoP\x01Z,github.com/retawsolit/wemeet-protocol/wemeet\xa2\x02\x03WXX\xaa\x02\x06Wemeet\xca\x02\x06Wemeet\xe2\x02\x12Wemeet\\GPBMetadata\xea\x02\x06Wemeetb\x06proto3"
 
 var (
 	file_wemeet_auth_room_proto_rawDescOnce sync.Once

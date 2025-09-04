@@ -13,7 +13,7 @@ import (
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/livekit/protocol/livekit"
-	"github.com/retawsolit/WeMeet-protocol/wemeet"
+	"github.com/retawsolit/wemeet-protocol/wemeet"
 	"google.golang.org/protobuf/encoding/protojson"
 	"google.golang.org/protobuf/proto"
 )

@@ -3,7 +3,7 @@ package utils
 import (
 	"time"
 
-	"github.com/retawsolit/WeMeet-protocol/wemeet"
+	"github.com/retawsolit/wemeet-protocol/wemeet"
 )
 
 func PrepareDefaultRoomFeatures(r *wemeet.CreateRoomReq) {

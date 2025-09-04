@@ -6,7 +6,7 @@ import (
 	"github.com/go-jose/go-jose/v4"
 	"github.com/go-jose/go-jose/v4/jwt"
 	"github.com/livekit/protocol/auth"
-	"github.com/retawsolit/WeMeet-protocol/wemeet"
+	"github.com/retawsolit/wemeet-protocol/wemeet"
 )
 
 func GenerateWeMeetJWTAccessToken(apiKey, secret, userId string, tokenValidity time.Duration, c *wemeet.WeMeetTokenClaims) (string, error) {
